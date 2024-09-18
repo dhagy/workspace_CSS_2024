@@ -1,0 +1,38 @@
+/* style file created by Dylan Hagy
+===============================================
+00: css variable
+01: color
+02: Typography
+
+===============================================
+*/
+
+/* 00: css variable */
+:root{
+    --body-color: hsla(359,39%,35%,0.8);
+    --page-color: hsla(30, 32%, 88%, 0.9);
+    --sidebar-color: rgb(191,164,99);
+    /** font color **/
+    --font-color: rgb(2,17,22 );
+    /** h1 color -- practice **/
+    --h1-color: hsla(239, 87%, 50%, 0.9);
+}
+
+
+/* 01: Color */
+body{
+    background-color: var(--body-color);
+}
+#zen-intro{
+    background-color: var(--page-color);
+    color: var(--font-color);
+}
+#zen-supporting{
+    background-color: var(--page-color);
+}
+.sidebar{
+    background-color: var(--sidebar-color);
+}
+h1{
+    color: var(--h1-color);
+}
