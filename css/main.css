@@ -16,6 +16,11 @@
     --font-color: rgb(2,17,22 );
     /** h1 color -- practice **/
     --h1-color: hsla(239, 87%, 50%, 0.9);
+    /** layout variables **/
+    --page-top-position: 85%;
+    --page-width: 30%;
+    --bottom-bar-height: 15vh;
+    --bottom-bar-color: hsla(27, 43%, 55%, 1);
 }
 
 
@@ -35,4 +40,59 @@ body{
 }
 h1{
     color: var(--h1-color);
+}
+
+/* 02: Layout */
+div.explanation, div.requirements, div.benefits, div.participation {
+    position: fixed;
+    width: var(--page-width);
+    top:  var(--page-top-position);
+    background-image: url(../img/newspaper3.jpg);
+}
+
+div.explanation{
+    left: 0%;
+}
+
+/* finish it for requirements/benefits/participation */
+
+div.requirements{
+    left: 15%;
+}
+
+div.benefits{
+    left: 30%;
+}
+
+div.participation{
+    left: 45%;
+}
+
+aside.sidebar{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    /* bottom: 0; */
+    /* adjust width/height */
+    width: 15%;
+    height: 60%;
+}
+
+section.intro{
+    /* finish as much as can */
+    position: fixed;
+    bottom: 15%;
+    left: 30%;
+    width: 40%;
+    height: 80%;
+    background-image:url(../img/newspaper3.jpg);
+}
+
+div.extra2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--bottom-bar-height);
+    background-color: var(--bottom-bar-color);
 }
