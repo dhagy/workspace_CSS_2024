@@ -15,7 +15,7 @@
     /** font color **/
     --font-color: rgb(2,17,22 );
     /** h1 color -- practice **/
-    --h1-color: hsla(239, 87%, 50%, 0.9);
+    --h1-color: hsla(240, 87%, 3%, 0.979);
     /** layout variables **/
     --page-top-position: 85%;
     --page-width: 30%;
@@ -83,9 +83,13 @@ section.intro{
     position: fixed;
     bottom: 15%;
     left: 30%;
-    width: 40%;
-    height: 80%;
+    width: 30%;
+    height: 70%;
     background-image:url(../img/newspaper3.jpg);
+    padding: 2%;
+    border: 2px dashed rgb(39, 34, 34);
+    margin-left: 10px;
+    text-indent: 1px; /* -9999px can remove the content away */
 }
 
 div.extra2{
@@ -95,4 +99,63 @@ div.extra2{
     width: 100%;
     height: var(--bottom-bar-height);
     background-color: var(--bottom-bar-color);
+}
+
+div.extra1{
+    position: fixed;
+    bottom: 5%;
+    left: 20%;
+    width: 40%;
+    height: 80%;
+    background-image: url(../img/newspaper2.jpg);
+    z-index: -1;
+}
+
+/* create tabs for the folder */
+div.explanation h3, div.requirements h3, div.benefits h3, div.participation h3 {
+    margin-top: -3.8%;
+    width: 12vw;
+    background-color: bisque;
+}
+
+/** 03: Typography **/
+@font-face {
+    font-family: 'myfont';
+    src: url(../fonts/chunkfive.eot);
+}
+
+header h1{
+    font-family: 'myfont', sans-serif;
+    font-weight: 100;
+    font-size: 1.25em;
+    letter-spacing: normal;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+header h2{
+    /* use different web fonts */
+    font-family: 'Arsenal', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* hiding resources */
+#design-selection h3 {
+    visibility: hidden;
+}
+
+/* hide the archive section / resource section */ 
+#design-archives {
+    visibility: hidden;
+}
+
+#zen-resources {
+    visibility: hidden;
 }
