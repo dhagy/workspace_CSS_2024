@@ -121,7 +121,7 @@ div.explanation h3, div.requirements h3, div.benefits h3, div.participation h3 {
 /** 03: Typography **/
 @font-face {
     font-family: 'myfont';
-    src: url(../fonts/chunkfive.eot);
+    src: url(../fonts/chunkfive.eot);z
 }
 
 header h1{
@@ -158,4 +158,62 @@ li{
 
 #zen-resources {
     visibility: hidden;
+}
+
+/* 04 Selector practice, transform, transition, ... */
+a:hover {
+    font-size: 1.5em;
+}
+
+div.explanation:hover {
+    top: 15vh;
+    height: 90vh;
+}
+
+/* finish the active actions for requirements/benefits/participation */
+div.requirements:hover {
+    top: 15vh;
+    height: 90vh;
+}
+
+div.benefits:hover {
+    top: 15vh;
+    height: 90vh;
+}
+
+div.participation:hover {
+    top: 15vh;
+    height: 90vh;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+p:nth-child(2n){
+    background-color: bisque;
+}
+
+p:nth-child(2n+1){
+    background-color: aquamarine;
+}
+
+li:first-of-type {
+    background-color: yellow;
+    font-size: 1.5em;
+}
+
+/** Try one text shadow **/
+h3 {
+    color: black;
+    text-shadow: gray 0.1em 0.1em 0.2em;
+}
+
+/** Border radius for the tabs **/
+div.explanation h3, div.requirements h3, div.benefits h3, div.participation h3 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: solid black 1px;
+    padding-left: 5px;
 }
