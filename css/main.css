@@ -117,6 +117,7 @@ div.extra1{
     transform: rotate(15deg) translate(200px, -100px);
 }
 
+
 /* create tabs for the folder */
 div.explanation h3, div.requirements h3, div.benefits h3, div.participation h3 {
     margin-top: -3.8%;
@@ -265,3 +266,37 @@ body {
 aside.sidebar{
     clip-path: polygon(0 0, 0 60%, 50% 90%, 100% 60%, 100% 0);
 }
+
+/** October 14 grid practice **/
+
+  .one{
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+  
+  .two{
+    grid-column: 1/ 4;
+    grid-row: 1/2;
+  }
+  
+  .three{
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  
+  .four{
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+  
+  .five{
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+  
+  .six{
+    grid-column: 3/5;
+    grid-row: 3/5;
+  }
+  
+  
